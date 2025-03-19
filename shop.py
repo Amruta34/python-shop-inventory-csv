@@ -148,7 +148,7 @@ class ShopSystem:
             product = self.inventory.products[product_id]
             quantity = int(input(f"Enter quantity for {product.name}: "))
             self.total_price = total_price
-            total_price=self.inventory.sales[]
+            total_price=self.inventory.sales[0]
 
             if quantity > product.quantity:
                 print("Insufficient stock!")
